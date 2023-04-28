@@ -1,0 +1,176 @@
+.navbar {
+  width: 100%;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar img {
+  height: 50px;
+}
+
+.navbarActive {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #aaa;
+  position: fixed;
+  z-index: 100;
+}
+
+.navbarActive a {
+  color: #000;
+}
+
+.navbarActive img {
+  filter: brightness(0%);
+  margin: 10px 0;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 80%;
+}
+
+.container ul li {
+  cursor: pointer;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.container ul li a {
+  text-decoration: none;
+}
+
+.container ul li a:hover {
+  color: #9D84B7;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 379px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .container img {
+    width: 100%;
+  }
+
+  .menuBtn {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .navbar img {
+    transform: scale(1.4) translateY(-12px);
+    transform-origin: left bottom;
+    transition: 300ms;
+  }
+
+  .navbarActive img {
+    transform: scale(1) translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1139px) {
+  .container {
+    /*position: relative;*/
+    align-items: center;
+  }
+
+  .menuBtn {
+    cursor: pointer;
+    height: 20px;
+    position: relative;
+    width: 24px;
+  }
+
+  .menuBtnLine {
+    position: relative;
+    top: 7px;
+    height: 2px;
+    width: 24px;
+  }
+
+  .menuBtnLine::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    height: 2px;
+    width: 24px;
+  }
+
+  .menuBtnLine::after {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    height: 2px;
+    width: 24px;
+  }
+
+  .navbar .menuBtnLine, .navbar .menuBtnLine::before, .navbar .menuBtnLine::after {
+    background-color: #fff;
+  }
+
+  .navbarActive .menuBtnLine, .navbarActive .menuBtnLine::before, .navbarActive .menuBtnLine::after {
+    background-color: #000;
+  }
+
+  .menuHidden {
+    display: none;
+  }
+
+  .menu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    position: absolute;
+    left: 0;
+    margin: auto;
+    top: 0;
+    width: 100%;
+    z-index: 120;
+  }
+
+  .navbar .menu {
+    background-color: #091353;
+  }
+
+  .navbarActive .menu {
+    background-color: #fff;
+  }
+
+  .menu li {
+    padding: 20px 0;
+  }
+
+  .closeIcon {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .menuBtn {
+    display: none;
+  }
+
+  .menu, .menuHidden {
+    display: flex;
+  }
+
+  .container ul li {
+    padding-left: 30px;
+  }
+
+  .closeIcon {
+    display: none;
+  }
+}

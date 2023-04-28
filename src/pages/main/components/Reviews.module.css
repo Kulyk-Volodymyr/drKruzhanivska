@@ -1,0 +1,96 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 120px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.infoContainer {
+    margin: 0 auto 40px auto;
+    max-width: 800px;
+    text-align: center;
+    width: 100%;
+}
+
+.infoContainer p {
+    color: #3a3a3a;
+    font-size: larger;
+    margin: 0 0 30px 0;
+}
+
+.reviewContainer {
+    align-content: space-around;
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    gap: 40px;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+}
+
+.reviewContainer h3 {
+    color: #3a3a3a;
+}
+
+.review {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 250px;
+    padding: 0 30px;
+    position: relative;
+    width: 400px;
+}
+
+.review p {
+    margin: 60px 0;
+    position: relative;
+}
+
+.review p::before {
+    color: #9D84B7;
+    content: '“';
+    position: absolute;
+    font-size: 80px;
+    transform: translateY(-20px);
+}
+
+.review p::after {
+    color: #9D84B7;
+    content: '”';
+    position: absolute;
+    font-size: 80px;
+    transform: translateY(50px);
+}
+
+.reviewLeftGradient {
+    background-image:-moz-linear-gradient(left, #eee 40%, rgba(255, 255, 255, 0));
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 160px;
+    z-index: 5;
+}
+
+.reviewRightGradient {
+    background-image:-moz-linear-gradient(left, rgba(255, 255, 255, 0), #eee 60%);
+    height: 100%;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 160px;
+    z-index: 5;
+}

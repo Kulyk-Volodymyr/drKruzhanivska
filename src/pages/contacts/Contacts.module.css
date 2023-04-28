@@ -1,0 +1,7 @@
+.banner {
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .banner h3, .banner p { font-size: 1.5rem; }
+}

@@ -1,0 +1,107 @@
+.team {
+    display: flex;
+    padding: 60px 0 100px 0;
+}
+
+.container {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.aboutTeam {
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+
+.aboutTeam p {
+    color: #3a3a3a;
+    font-size: larger;
+}
+
+.employees {
+    display: flex;
+    gap: 60px;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.employee {
+    flex: 1;
+    position: relative;
+    width: 100%;
+}
+
+.employeeContainer {
+    padding: 20px 40px 0 40px;
+    position: relative;
+}
+
+.employeePhoto {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 16px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 4;
+}
+
+.employeePhoto img {
+    width: 100%;
+}
+
+.employeeInfo {
+    background-color: #9D84B7;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    right: -30px;
+    margin: auto;
+    width: 80%;
+    z-index: 2;
+}
+
+.employeeInfo h3 {
+    margin: 6px 0 0 0;
+    text-align: right;
+}
+
+.employeeInfo p {
+    margin: 6px 0 0 0;
+    text-align: right;
+}
+
+.employeeBg1 {
+    border: 4px solid #B2F9FC;
+    height: 430px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+    z-index: 3;
+}
+
+.employeeBg2 {
+    background-color: #9D84B7;
+    height: 80%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 991px) {
+    .employees {
+        flex-direction: column;
+    }
+}
+ 
+@media screen and (min-width: 992px) {
+
+}

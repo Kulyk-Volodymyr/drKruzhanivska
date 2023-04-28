@@ -1,0 +1,15 @@
+.banner {
+    margin: 0;
+}
+
+.banner p:not(.bannerCite p) {
+    font-size: larger;
+}
+
+.bannerCite {
+    font-style: italic;
+    margin: auto;
+    text-align: right;
+    left: 10%;
+    width: 80%;
+}

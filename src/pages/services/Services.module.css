@@ -1,0 +1,46 @@
+.banner {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.section {
+    text-align: center;
+    scroll-margin: 70px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .section h1 {
+        margin-bottom: 4px;
+    }
+}
+  
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .section h1 {
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .section h1 {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .section h1 {
+        margin-bottom: 30px;
+    }
+}
+  
+@media screen and (min-width: 1400px) {
+    .section h1 {
+        margin-bottom: 40px;
+    }
+}

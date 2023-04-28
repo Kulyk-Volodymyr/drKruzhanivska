@@ -1,0 +1,44 @@
+.banner {
+    margin: 0;
+}
+
+.section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    max-width: 900px;
+    width: 80%;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #D5D5D5;
+}
+
+.table tr {
+    border: 1px solid #fff;
+}
+
+.table tr td:nth-child(2) {
+    width: 30%;
+}
+
+.table td {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+}
+  
+
+@media screen and (min-width: 768px) {
+    .table td { font-size: larger }
+}

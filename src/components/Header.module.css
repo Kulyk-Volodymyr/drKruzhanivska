@@ -1,0 +1,40 @@
+@import '../index.css';
+
+.header {
+    /*background-color: var(--color-brown1);*/
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px auto;
+    max-width: 1200px;
+    text-align: right;
+    width: 80%;
+}
+
+.infoText {
+    height: fit-content;
+    margin-right: 20px;
+}
+
+.infoText p {
+    /*color: #e2d7c6;*/
+    color: #fff;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.instagram {
+    height: 40px;
+}
+
+.instagram img {
+    height: 100%;
+}

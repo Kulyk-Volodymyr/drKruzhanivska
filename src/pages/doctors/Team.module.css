@@ -1,0 +1,109 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.container p, .container h3 {
+    color: #3a3a3a;
+}
+
+.doctor {
+    height: fit-content;
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    height: fit-content;
+    position: relative;
+}
+
+.imgContainer {
+    aspect-ratio: 1/1.5;
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+
+}
+
+.imgContainer img {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 16px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.imgBg1 {
+    background-color: #D5D5D5;
+    height: 70%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+}
+
+.imgBg2 {
+    background-color: #9D84B7;
+    height: 70%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+}
+
+.info {
+    position: relative;
+    width: 100%;
+}
+
+.info h2 {
+    margin: 20px 0;
+}
+
+.info ul {
+    color: #3a3a3a;
+    line-height: 1.5rem;
+}
+
+.info li {
+    color: #3a3a3a;
+    
+}
+
+@media screen and (max-width: 991px) {
+    .doctor {
+        margin: 40px 0;
+    }
+
+    .image {
+        margin: auto;
+        max-width: 480px;
+        width: 100%;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .info ul {
+        text-align: left;
+    }
+}
+  
+@media screen and (min-width: 992px) {
+    .doctor {
+        margin: 50px 0;
+    }
+    
+    .image {
+        float: left;
+        margin: 0 60px 20px 0;
+        max-width: 480px;
+        width: 50%;
+    }
+}

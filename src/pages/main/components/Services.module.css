@@ -1,0 +1,158 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.aboutServices {
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+
+.aboutServices p {
+    color: #3a3a3a;
+    font-size: larger;
+}
+
+.servicesContainer {
+    margin-top: 80px;
+    position: relative;
+    width: 100%;
+}
+
+.ourServices {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1200px;
+    position: relative;
+    width: 80%;
+    z-index: 5;
+}
+
+.service {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.infoContainer {
+    display: flex;
+    flex: 1;
+}
+
+.info {
+    align-items: center;
+    background-color: #9D84B7;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px;
+    width: 100%;
+    z-index: 3;
+}
+
+.info h2 {
+    text-align: center;
+}
+
+.info a {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.info a:hover {
+    background-color: #091353;
+}
+
+.image {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 16px;
+    flex: 1;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.image img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.imgBg1 {
+    background-color: #D5D5D5;
+    height: 36%;
+    position: absolute;
+    right: 0;
+    top: 5%;
+    width: 60%;
+}
+
+.imgBg2 {
+    background-color: #D5D5D5;
+    height: 36%;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    width: 60%;
+}
+
+.border {
+    border: 4px solid #B2F9FC;
+    box-sizing: border-box;
+    height: calc(100% - 80px);
+    position: absolute;
+    top: 40px;
+    width: 80%;
+}
+
+.service:nth-child(odd) .border {
+    right: 20px;
+}
+
+.service:nth-child(even) .border {
+    left: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .service {
+        flex-direction: column-reverse;
+    }
+
+    .info {
+        margin-top: 20px;
+    }
+
+    .info a {
+        margin-bottom: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+ 
+@media screen and (min-width: 992px) {
+    .info a {
+        padding: 0.8rem 2rem;
+    }
+
+    .ourServices {
+        gap: 80px;
+    }
+    .service:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}

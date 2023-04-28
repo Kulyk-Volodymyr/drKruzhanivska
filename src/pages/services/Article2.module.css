@@ -1,0 +1,100 @@
+.image {
+    align-items: center;
+    background-color: rgb(180, 180, 180);
+    display: flex;
+    flex-direction: column;
+}
+
+.imageContainer {
+    display: flex;
+    gap: 40px;
+    width: 90%;
+}
+
+.imageWrapper {
+    height: 300px;
+    margin: auto;
+    width: 400px;
+}
+
+.imageWrapper img {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 16px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.image button {
+    background-color: #9D84B7;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 40px 0;
+    padding: 0.8rem 2rem;
+    width: fit-content;
+}
+
+.image button:hover {
+    background-color: #091353;
+    color: #fff;
+}
+
+.info {
+    margin: auto;
+    max-width: 1200px;
+    text-align: left;
+    width: 80%;
+}
+
+
+@media screen and (max-width: 767px) {
+    .imageContainer {
+        flex-direction: column;
+    }
+
+    .imageWrapper {
+        max-width: 500px;
+        width: 100%;
+    }
+}
+  
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .image {
+        float: right;
+        margin: 0 0 10px 60px;
+        /*min-width: 500px;*/
+        width: 50%;
+    }
+
+    .imageContainer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .image {
+        float: right;
+        margin: 0 0 10px 60px;
+        /*min-width: 500px;*/
+        width: 50%;
+    }
+
+    .imageContainer {
+        flex-direction: column;
+    }
+}
+  
+@media screen and (min-width: 1400px) {
+    .image {
+        float: right;
+        margin: 0 0 10px 60px;
+        /*min-width: 500px;*/
+        width: 55%;
+    }
+}
