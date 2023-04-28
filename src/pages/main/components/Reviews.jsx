@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Reviews.module.css';
-import pic from '../../../assets/banners/woman-cosmetology-studio-procedures.jpg';
 
 function Reviews() {
   return (

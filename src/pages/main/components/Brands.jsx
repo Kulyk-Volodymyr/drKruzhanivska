@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Brands.module.css';
-import pic from '../../../assets/banners/young-woman-having-facial-treatment.jpg';
+import pic from '../../../assets/banners/young-woman.jpg';
 import {BRANDS} from '../../../data/brands';
 
 function Brands() {

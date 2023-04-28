@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './About.module.css';
-import pic from '../../../assets/banners/woman-cosmetology-studio-procedures.jpg';
+import pic from '../../../assets/banners/woman-cosmetology.jpg';
 
 function About() {
   return (

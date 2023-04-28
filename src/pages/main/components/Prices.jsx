@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Prices.module.css';
-import pic from '../../../assets/banners/cosmetologist-showing-her-patient-innovations-cosmetology.jpg';
+import pic from '../../../assets/banners/cosmetologist-showing.jpg';
 import {Link} from "react-router-dom";
 
 function Prices() {

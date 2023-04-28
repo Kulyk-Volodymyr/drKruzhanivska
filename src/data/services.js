@@ -1,7 +1,7 @@
-const service1 = require("../assets/services/young-beautiful-woman-getting-face-skin-treatment.jpg");
-const service2 = require("../assets/services/close-up-woman-getting-lip-filler.jpg");
-const service3 = require("../assets/services/cosmetologist-cleaning-face-woman-beauty-salon.jpg")
-const service4 = require("../assets/services/young-woman-lying-cosmetologist-s-table-during-rejuvenation-procedure.jpg");
+const service1 = require("../assets/services/young-beautiful.jpg");
+const service2 = require("../assets/services/close-up.jpg");
+const service3 = require("../assets/services/cosmetologist.jpg")
+const service4 = require("../assets/services/young-woman.jpg");
 
 export const SERVICES = [
     {

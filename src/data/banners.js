@@ -1,9 +1,9 @@
-const bgMain = require("../assets/banners/young-woman-having-facial-treatment.jpg");
-const bgServices = require("../assets/banners/beautiful-woman-spa-having-cosmetic-treatment.jpg");
-const bgDoctors = require("../assets/banners/doctor-writing-medical-reports-while-talking-patient.jpg");
-const bgPrices = require("../assets/banners/cosmetologist-showing-her-patient-innovations-cosmetology.jpg");
-const bgGallery = require("../assets/banners/rejuvenating-facial-treatment.jpg");
-const bgContacts = require("../assets/banners/woman-cosmetology-studio-procedures.jpg");
+const bgMain = require("../assets/banners/young-woman.jpg");
+const bgServices = require("../assets/banners/beautiful-woman.jpg");
+const bgDoctors = require("../assets/banners/doctor-writing.jpg");
+const bgPrices = require("../assets/banners/cosmetologist-showing.jpg");
+const bgGallery = require("../assets/banners/rejuvenating.jpg");
+const bgContacts = require("../assets/banners/woman-cosmetology.jpg");
 const bgContacts1 = require("../assets/banners/flowers.jpg");
 
 export const BANNERS = {
